@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+}
+
+#nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: bisque; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+}
+
+#header-img{
+    height: 80px;
+    width: 100px;
+}
+
+main{
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+    margin: 5vw auto;
+}
+#email{
+    height: 2vw;
+    border: 2px solid black;
+    padding-left: 5px;
+}
+#submit{
+    height: 2vw;
+    width: 3vw;
+    background-color: rgb(255, 221, 0);
+}
+
+#Features{
+    width: 70%;
+    margin-bottom: 8vw;
+}
+
+.how_it_works{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 8vw;
+}
+
+.div-price{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#Price{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+    margin: 10px;
+    margin-bottom: 10vw;
+}
+
+.precio{
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.price-text{
+    padding: 8px;
+}
+.price-title{
+    width: 100%;
+    background-color: rgb(227, 204, 174);
+}
+.nprice{
+    width: 20%;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+@media(max-width: 800px) {
+    body{
+        display: flex;
+    }
+    #submit{
+        width: 5vw;
+    }
+    #Price{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}

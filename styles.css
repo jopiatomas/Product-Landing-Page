@@ -108,7 +108,7 @@ main{
 footer{
     margin-top: 3vw;
     height: 10vw;
-    background-color: gray;
+    background-color: rgb(250, 217, 176);
     display: flex;
     justify-content: center;
     align-items: center;
